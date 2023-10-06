@@ -144,7 +144,7 @@ class Calculator:
         self.number_entry.delete(0, tk.END)
 
     def button_divide(self):
-        """деление (с остатком)"""
+        """деление(с остатком)"""
         first_number = self.number_entry.get()
         self.math = "division"
         self.f_num = int(first_number)
