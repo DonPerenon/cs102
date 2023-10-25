@@ -8,7 +8,7 @@ class Calculator:
         """инициализация"""
         self.main = main
         self.main.title("Калькулятор")
-        self.main.geometry("440x150")
+        self.main.geometry("470x160")
 
         self.number_entry = ttk.Entry(self.main, width=20)
         self.number_entry.grid(row=0, column=0, columnspan=5, padx=10, pady=10)
@@ -121,13 +121,22 @@ class Calculator:
             self.number_entry.insert(0, self.f_num * int(second_number))
 
         if self.math == "division":
-            self.number_entry.insert(0, self.f_num / int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'на 0 делить нельзя!')
+            else:
+                self.number_entry.insert(0, self.f_num / int(second_number))
 
         if self.math == "floor_div":
-            self.number_entry.insert(0, self.f_num // int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'на 0 делить нельзя!')
+            else:
+                self.number_entry.insert(0, self.f_num / int(second_number))
 
         if self.math == "modulus":
-            self.number_entry.insert(0, self.f_num % int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'на 0 делить нельзя!')
+            else:
+                self.number_entry.insert(0, self.f_num / int(second_number))
 
     def button_subtraction(self):
         """разность"""
@@ -144,7 +153,7 @@ class Calculator:
         self.number_entry.delete(0, tk.END)
 
     def button_divide(self):
-        """деление (с остатком)"""
+        """деление(с остатком)"""
         first_number = self.number_entry.get()
         self.math = "division"
         self.f_num = int(first_number)
