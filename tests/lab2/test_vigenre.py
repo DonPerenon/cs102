@@ -4,7 +4,7 @@ sys.path.append('/Users/viktorivanov/cs102/src/lab2')
 
 from vigenre import encrypt_vigenere, decrypt_vigenere
 
-class TestCaesarCipher(unittest.TestCase):
+class TestVigenreCipher(unittest.TestCase):
 
     def test_encrypt_vigenre(self):
         self.assertEqual(encrypt_vigenere("VIKTOR", "A"), 'VIKTOR')
