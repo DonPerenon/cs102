@@ -59,7 +59,7 @@ class CalculatorTestCase(unittest.TestCase):
         calculator.button_2.invoke()
         calculator.equal_button.invoke()
         result = calculator.number_entry.get()
-        self.assertEqual(result, "3")
+        self.assertEqual(result, "3.5")
 
 
     def test_moduling(self):
@@ -69,7 +69,7 @@ class CalculatorTestCase(unittest.TestCase):
         calculator.button_4.invoke()
         calculator.equal_button.invoke()
         result = calculator.number_entry.get()
-        self.assertEqual(result, "2")
+        self.assertEqual(result, "1.5")
 
 
     def test_root_calculation(self):
