@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append('/Users/viktorivanov/cs102/src/lab2')
+sys.path.append('../../src/lab2')
 
 from caesar import encrypt_caesar, decrypt_caesar
 

@@ -49,6 +49,3 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
         else:  # если символ не является буквой (например, пробел или знак пунктуации)
             plaintext += char  # просто добавляем его к исходному тексту
     return plaintext
-
-
-print(decrypt_vigenere("AQCATZDPPMTLJZ", "FISH"))
