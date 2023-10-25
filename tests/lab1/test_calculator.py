@@ -1,6 +1,12 @@
 import unittest
 import tkinter as tk
+import os
 import sys
+parent_dir = os.path.abspath(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), ".."))
+sys.path.append(parent_dir)
+
+from src.lab1.calculator import Calculator
+
 sys.path.append('/Users/viktorivanov/cs102/src')
 from lab1.calculator import Calculator
 
