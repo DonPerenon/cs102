@@ -7,8 +7,6 @@ sys.path.append(parent_dir)
 
 from src.lab1.calculator import Calculator
 
-sys.path.append('/Users/viktorivanov/cs102/src')
-from lab1.calculator import Calculator
 
 
 class CalculatorTestCase(unittest.TestCase):
