@@ -1,8 +1,10 @@
 import unittest
+import os
 import sys
-sys.path.append('../../src/lab2')
+parent_dir = os.path.abspath(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), ".."))
+sys.path.append(parent_dir)
 
-from caesar import encrypt_caesar, decrypt_caesar
+from src.lab2.caesar import encrypt_caesar, decrypt_caesar
 
 
 class TestCaesarCipher(unittest.TestCase):
